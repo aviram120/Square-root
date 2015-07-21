@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Multiplay" >
+
+    <Button
+        android:id="@+id/bottCalc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextC"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="72dp"
+        android:text="@string/calculate" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="@string/the_result_of_your_calculation_is_" />
+ 
+    <EditText
+        android:id="@+id/editTextB"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editTextA"
+        android:layout_alignBottom="@+id/editTextA"
+        android:layout_centerHorizontal="true"
+        android:inputType="numberSigned"
+        android:ems="10"
+        android:hint="@string/b" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/editTextC"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editTextB"
+        android:layout_alignBottom="@+id/editTextB"
+        android:layout_marginLeft="25dp"
+        android:inputType="numberSigned"
+        android:layout_toRightOf="@+id/textView1"
+        android:ems="10"
+        android:hint="@string/c" />
+
+    <TextView
+        android:id="@+id/tvX2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvX1"
+        android:layout_below="@+id/tvX1"
+        android:layout_marginTop="18dp"
+        android:text="@string/x2_" />
+
+    <TextView
+        android:id="@+id/tvX1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="18dp"
+        android:text="@string/x1_" />
+
+    <TextView
+        android:id="@+id/tvErro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvX2"
+        android:layout_below="@+id/tvX2"
+        android:layout_marginTop="38dp"
+        android:text="" />
+
+    <EditText
+        android:id="@+id/editTextA"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_alignParentTop="true"
+        android:ems="10"
+        android:hint="@string/a"
+        android:inputType="numberSigned" />
+
+</RelativeLayout>
